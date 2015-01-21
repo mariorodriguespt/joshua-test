@@ -1,0 +1,32 @@
+<template name='customersView'>
+    <div class="ui segment right aligned">
+        <div class="ui buttons">
+            <div id="addCustomer" class="ui primary button">
+                <i class="add icon"></i>
+                Add Customer
+            </div>
+        </div>
+        <table class="ui table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>E-mail address</th>
+                <th>Premium Plan</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each customers}}
+                <tr>
+                    <td>John Lilki</td>
+                    <td>Porto, Portugal</td>
+                    <td>jhlilk22@yahoo.com</td>
+                    <td>No</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    {{>addCustomerModal}}
+</template>

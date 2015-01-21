@@ -1,0 +1,12 @@
+<template name="masterLayout">
+    <div class="ui page grid">
+        <div class="ui row">
+            {{>masterLayoutTopMenu}}
+        </div>
+        <div class="ui row">
+            <div class="sixteen wide column">
+                {{>yield}}
+            </div>
+        </div>
+    </div>
+</template>

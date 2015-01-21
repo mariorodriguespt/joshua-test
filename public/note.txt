@@ -1,0 +1,2 @@
+The themes folder exist because this is a quick app.
+In production we can wrap semanic-ui in a package or, even better, use a CDN to get it.

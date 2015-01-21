@@ -1,0 +1,43 @@
+<template name="addCustomerModal">
+    <div id="addCustomerModalForm" class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Add Customer
+        </div>
+        <div class="content">
+            <form class="ui form">
+                <h4>Customer Information</h4>
+                <div class="two fields">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="Name"/>
+                    </div>
+                    <div class="field">
+                        <label for="city">City</label>
+                        <input type="text" name="city" placeholder="Location"/>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="'email" placeholder="Email Address"/>
+                    </div>
+                    <div class="field">
+                        <div class="ui toggle checkbox">
+                            <input type="radio" name="isPremium"/>
+                            <label for="isPremium">Is Premium user</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="actions">
+            <div class="ui negative left aligned button">
+                Cancel
+            </div>
+            <div id="saveNewCustomer" class="ui positive icon button">
+                Add
+            </div>
+        </div>
+    </div>
+</template>

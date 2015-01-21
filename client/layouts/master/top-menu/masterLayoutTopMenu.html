@@ -1,0 +1,40 @@
+<template name="masterLayoutTopMenu">
+    <div class="ui menu">
+        <a class="item active" href="#">
+            <i class="money icon"></i>
+            Customers
+        </a>
+        <div class="right menu">
+            <div class="item ui dropdown">
+                <div class="default text">Language</div>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                    <div class="item" selected="true" data-value="pt-pt">
+                        <i class="pt flag"></i>
+                        Português
+                    </div>
+                    <div class="item" data-value="en-us">
+                        <i class="us flag"></i>
+                        US English
+                    </div>
+                    <div class="item" data-value="de">
+                        <i class="de flag"></i>
+                        Deutsch
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ui transparent icon input">
+                    <input type="text" placeholder="Search..."/>
+                    <i class=" search link icon"></i>
+                </div>
+            </div>
+            <div class="item">
+                <div id="topMenu-Logout" class="ui button">
+                    <i class="icon user"></i>
+                    Logout
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
