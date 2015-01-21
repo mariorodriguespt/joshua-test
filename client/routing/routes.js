@@ -5,7 +5,7 @@ Router.configure({
 });
 
 Router.route('login',{
-    path:'/login',
+    path:'/',
     controller: 'LoginController'
 });
 
