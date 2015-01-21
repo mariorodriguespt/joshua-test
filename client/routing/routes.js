@@ -16,7 +16,6 @@ Router.route('customers',{
 
 Router.onBeforeAction(function(){
     if(!Meteor.user() && !Meteor.loggingIn()){
-        alert('false');
         this.redirect('login');
     }
 
@@ -29,6 +28,8 @@ Router.onBeforeAction(function(){
     if (Meteor.userId()){
         this.redirect('customers');
     }
+
+    this.next();
 },{
     only: ['login']
 });

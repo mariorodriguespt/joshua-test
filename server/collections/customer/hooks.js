@@ -1,5 +1,7 @@
-var addOwnertoDocument = function(userId, document){
+
+var addMetaDatatoDocument = function(userId, document){
     document.owner = userId;
+    document.createAt = new Date();
 };
 
-Customers.before.insert(addOwnertoDocument);
+Customers.before.insert(addMetaDatatoDocument);

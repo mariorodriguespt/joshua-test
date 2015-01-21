@@ -1,6 +1,5 @@
 <template name="addCustomerModal">
     <div id="addCustomerModalForm" class="ui modal">
-        <i class="close icon"></i>
         <div class="header">
             Add Customer
         </div>
@@ -14,14 +13,15 @@
                     </div>
                     <div class="field">
                         <label for="city">City</label>
-                        <input type="text" name="city" placeholder="Location"/>
+                        <input type="text" name="city" placeholder="City"/>
                     </div>
                 </div>
                 <div class="two fields">
                     <div class="field">
                         <label for="email">Email</label>
-                        <input type="email" name="'email" placeholder="Email Address"/>
+                        <input type="text" name="email" placeholder="Email Address"/>
                     </div>
+
                     <div class="field">
                         <div class="ui toggle checkbox">
                             <input type="radio" name="isPremium"/>
@@ -35,7 +35,7 @@
             <div class="ui negative left aligned button">
                 Cancel
             </div>
-            <div id="saveNewCustomer" class="ui positive icon button">
+            <div class="ui positive icon button">
                 Add
             </div>
         </div>

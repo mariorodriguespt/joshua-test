@@ -3,7 +3,8 @@ var customersSchema = new SimpleSchema({
        type: String
     },
     email:{
-        type:String
+        type:String,
+        regEx: SimpleSchema.RegEx.Email
     },
     isPremium:{
         type:Boolean,
@@ -13,7 +14,12 @@ var customersSchema = new SimpleSchema({
         type:String
     },
     owner:{
-        type:String
+        type:String,
+        optional: true //Populated by server hook
+    },
+    createdAt:{
+        type: Date,
+        optional: true //Populated by server hook
     }
 });
 

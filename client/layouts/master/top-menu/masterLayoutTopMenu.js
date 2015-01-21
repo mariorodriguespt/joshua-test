@@ -5,6 +5,12 @@ Template.masterLayoutTopMenu.events({
     }
 });
 
+Template.masterLayoutTopMenu.helpers({
+    userEmail : function(){
+        return Meteor.user().emails[0].address;
+    }
+});
+
 Template.masterLayoutTopMenu.rendered = function(){
     $('.dropdown').dropdown();
 };
